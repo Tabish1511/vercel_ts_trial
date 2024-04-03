@@ -4,9 +4,9 @@ import morgan from 'morgan';
 import path from 'path';
 // import helmet from 'helmet';
 
-import TTS from './routes/tts';
-import File from './routes/file';
-import Files from './routes/files';
+// import TTS from './routes/tts';
+// import File from './routes/file';
+// import Files from './routes/files';
 
 const PORT = process.env.PORT || 8000;
 
@@ -32,9 +32,9 @@ server.use(express.static(path.join(__dirname, '../public')));
 
 console.log('Dir: ', path.join(__dirname, '../public'));
 
-server.use('/api/v1/files', Files);
-server.use('/api/v1/file', File);
-server.use('/api/v1/tts', TTS);
+// server.use('/api/v1/files', Files);
+// server.use('/api/v1/file', File);
+// server.use('/api/v1/tts', TTS);
 
 server.listen(PORT, () =>
   console.log(`Server running on: http://localhost:${PORT}`)
