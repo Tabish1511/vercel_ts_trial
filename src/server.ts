@@ -1,6 +1,6 @@
 import express from 'express';
 import cors from 'cors';
-import morgan from 'morgan';
+// import morgan from 'morgan';
 import path from 'path';
 // import helmet from 'helmet';
 
@@ -12,7 +12,7 @@ const PORT = process.env.PORT || 8000;
 
 const server = express();
 
-server.use(morgan('dev'));
+// server.use(morgan('dev'));
 server.use(cors());
 // server.use(
 //   helmet({
